@@ -8,6 +8,7 @@ import './App.css';
 import { onAuthStateChanged } from 'firebase/auth';
 import { useEffect, useState } from 'react';
 import { auth } from './api/firebase-config/firebase-config';
+import UnAuthLayout from './components/layouts/unauth-layout';
 
 function App() {
   const [currentUser, setCurrentUser] = useState("");
@@ -18,13 +19,15 @@ function App() {
     })
 
     return unsubscribe;
-}, []);
+  }, []);
 
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<Signup />} />
+        <Route element={<UnAuthLayout user={currentUser} />}>
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
+        </Route>
         <Route path="/" element={<Home user={currentUser} />} />
       </>
     )

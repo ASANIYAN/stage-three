@@ -13,5 +13,5 @@ export const ButtonHoverDark = ({text, handleClick}) => {
 
 ButtonHoverDark.propTypes = {
     text: PropTypes.node.isRequired,
-    handleClick: PropTypes.func.isRequired
+    handleClick: PropTypes.func
 }

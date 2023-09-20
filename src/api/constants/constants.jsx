@@ -1,0 +1,1 @@
+export const baseURL = "https://api.cloudinary.com/v1_1/dp2pjyxap";

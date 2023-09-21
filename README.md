@@ -41,6 +41,3 @@ npm run dev
 1. Open your web browser.
 2. Access the app by navigating to http://localhost:3000 (or the specified port if different).
 3. Browse through the image gallery.
-4. Click on an image to view it in full size.
-5. Use the arrow keys or navigation buttons to move between images.
-6. Enjoy the visually appealing gallery!

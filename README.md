@@ -1,9 +1,46 @@
-# React + Vite
+# Vite React Image Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully functional and responsive image gallery that showcases a collection of images in a visually appealing way.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# stage-three
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+
+## Getting Started
+
+To get started with the project, follow these steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/your-image-gallery.git
+
+# Navigate to the project directory
+cd your-image-gallery
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+
+# Prerequisites
+- Node.js (v14 or higher)
+
+# Installation
+1. Clone the repository
+2. Navigate to the project directory
+3. Install dependencies with `npm install`
+4. Configure environment variables (if needed)
+5. Run the development server with `npm run dev`
+
+## Usage
+
+1. Open your web browser.
+2. Access the app by navigating to http://localhost:3000 (or the specified port if different).
+3. Browse through the image gallery.
+4. Click on an image to view it in full size.
+5. Use the arrow keys or navigation buttons to move between images.
+6. Enjoy the visually appealing gallery!

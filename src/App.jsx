@@ -4,11 +4,12 @@ import Signup from './pages/signup';
 import Login from './pages/login';
 import Home from './pages/home';
 
-import './App.css';
 import { onAuthStateChanged } from 'firebase/auth';
 import { useEffect, useState } from 'react';
 import { auth } from './api/firebase-config/firebase-config';
 import UnAuthLayout from './components/layouts/unauth-layout';
+
+import './App.css';
 
 function App() {
   const [currentUser, setCurrentUser] = useState("");

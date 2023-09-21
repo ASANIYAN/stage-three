@@ -48,7 +48,6 @@ const LoginComponent = () => {
                         break;
                 }
             })
-        console.log(data);
     }
 
 

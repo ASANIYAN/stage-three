@@ -46,39 +46,16 @@ const UploadComponent = () => {
 
     const handleRemoveFile = (imageToRemove) => {
         setSelectedImages((prevImages) => prevImages.filter((image) => image !== imageToRemove));
-    };
-
-    // const handleUpload = (image) => {
-    //     const url = `${baseURL}/image/upload`;
-    //     const formData = new FormData();
-    //     // let file = images[0];
-    //     formData.append("file", image);
-    //     formData.append("upload_preset", import.meta.env.VITE_PRESET_NAME);
-    //     formData.append("cloud_name", import.meta.env.VITE_CLOUD_NAME);
-    //     fetch(url, {
-    //       method: "POST",
-    //       body: formData
-    //     })
-    //       .then((response) => {
-    //         return response.json();
-    //       })
-    //       .then((data) => {
-    //         console.log(data, "success");
-    //       })
-    //       .catch((err) => console.log(err, "error"))
-    //   };   
+    };  
 
     const handleClick = (data) => {
-        // console.log(data.images);
         setLoading(true);
         handleMultipleUpload(data.images)
-        .then((result) => {
-            console.log(result);
+        .then(() => {
             setLoading(false);
             setSelectedImages([]);
         })
-        .catch(err => {
-            console.log(err)
+        .catch(() => {
             setError(true);
         })
     }

@@ -43,6 +43,9 @@ const LoginComponent = () => {
                     case 'auth/user-not-found':
                         setError('no user associated with this email');
                         break;
+                    case 'auth/invalid-login-credentials':
+                        setError('invalid login details');
+                        break;
                     default:
                         setError("error occurred.")
                         break;
